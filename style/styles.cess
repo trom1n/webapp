@@ -1,0 +1,103 @@
+/* Organic Apple-Inspired UI */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to bottom, #f8f8f8, #e6edea);
+    color: #2C3E50;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Header with Soft Blur */
+header {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    color: #2C3E50;
+    width: 100%;
+    padding: 25px;
+    font-size: 2em;
+    font-weight: 600;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Main Container */
+main {
+    width: 90%;
+    max-width: 650px;
+    margin-top: 40px;
+}
+
+/* Soft, Glassmorphism Cards */
+.card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+}
+
+/* Smooth List Style */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 12px 0;
+}
+
+/* Organic & Smooth Buttons */
+a {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #00796B;
+    padding: 12px 18px;
+    border-radius: 12px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    background: rgba(0, 121, 107, 0.1);
+    color: #004D40;
+    transform: scale(1.05);
+}
+
+a.clicked {
+    background: rgba(0, 121, 107, 0.2);
+}
+
+/* Footer - Simple & Elegant */
+footer {
+    margin-top: 40px;
+    padding: 15px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: #2C3E50;
+    font-size: 0.9em;
+    font-weight: 500;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
