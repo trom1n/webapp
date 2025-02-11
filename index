@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Talon's Class</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>📖 Mr Talon's Class</h1>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Welcome!</h2>
+            <p>Ici, vous trouverez vos cours, des exercices, des liens intéressants et des quizz.</p>
+        </section>
+        
+        <section class="card">
+            <h2>Les cours</h2>
+            <h3>Cliquez sur vos classes:</h3>
+            <ul>
+                <li><a href="3PM.html">3PM</a></li>
+                <li><a href="1CAP.html">1CAP</a></li>
+                <li><a href="2CAP.html">2CAP</a></li>
+                <li><a href="2PRO.html">2PRO</a></li>
+                <li><a href="TPRO.html">TPRO</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Mr Talon's Class | Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", (e) => {
+                link.classList.add("clicked");
+                setTimeout(() => {
+                    link.classList.remove("clicked");
+                }, 300);
+            });
+        });
+    </script>
+</body>
+</html>
